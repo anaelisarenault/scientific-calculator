@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Scientific Calulator</title>
+    <script language="javascript" src='/js/script.js'></script> 
+  </head> 
+  <body>
+    <div class='container'>
+      <form>
+        <h3> Scientific Calculator </h3> 
+        <input name="display" value="0" size=50></td>
+        <br> <br> 
+        <input type="button" class = "calc-button" value="   exp  " onClick="if (checkNum(this.form.display.value)) { 
+        exp(this.form) }">
+        <input type="button" class = "calc-button" value="    7    " onClick="addChar(this.form.display, '7')">
+        <input type="button" class = "calc-button" value="    8    " onClick="addChar(this.form.display, '8')">
+        <input type="button" class = "calc-button"  value="    9    " onClick="addChar(this.form.display, '9')">
+        <input type="button" class = "calc-button" value="    /    " onClick="addChar(this.form.display, '/')">
+        <br>
+        <input type="button" class = "calc-button"  value="   ln    " onClick="if (checkNum(this.form.display.value)) { 
+        ln(this.form) }">
+        <input type="button" class = "calc-button" value="    4    " onClick="addChar(this.form.display, '4')">
+        <input type="button" class = "calc-button" value="    5    " onClick="addChar(this.form.display, '5')">
+        <input type="button" class = "calc-button" value="    6    " onClick="addChar(this.form.display, '6')">
+        <input type="button" class = "calc-button" value="    *    " onClick="addChar(this.form.display, '*')">
+        <br>
+        <input type="button" class = "calc-button" value="   sqrt  " onClick="if (checkNum(this.form.display.value)) {
+        cos(this.form) }">
+        <input type="button" class = "calc-button"  value="    1    " onClick="addChar(this.form.display, '1')">
+        <input type="button" class = "calc-button"  value="    2    " onClick="addChar(this.form.display, '2')">
+        <input type="button" class = "calc-button" value="    3    "  onClick="addChar(this.form.display, '3')">
+        <input type="button" class = "calc-button" value="    -    "  onClick="addChar(this.form.display, '-')">
+        <br>
+        <input type="button" class = "calc-button" value="   sq    " onClick="if (checkNum(this.form.display.value)) { 
+        square(this.form) }">
+        <input type="button" class = "calc-button" value="    0    " onClick="addChar(this.form.display, '0')"> 
+        <input type="button" class = "calc-button" value="    .    " onClick="addChar(this.form.display, '.')"> 
+        <input type="button" class = "calc-button" value="   +/-   " onClick="changeSign(this.form.display)">
+        <input type="button" class = "calc-button" value="    +    " onClick="addChar(this.form.display, '+')">
+        <br>
+        <input type="button" class = "calc-button" value="    (    " onClick="addChar(this.form.display, '(')"> 
+        <input type="button" class = "calc-button" value="   cos   " onClick="if (checkNum(this.form.display.value)) { 
+        cos(this.form) }">
+        <input type="button" class = "calc-button" value="   sin   " onClick="if (checkNum(this.form.display.value)) {
+        sin(this.form) }">
+        <input type="button" class = "calc-button" value="   tan   " onClick="if (checkNum(this.form.display.value)) { 
+        tan(this.form) }">
+        <input type="button" class = "calc-button" value="    )    " onClick="addChar(this.form.display, ')')"> 
+        <br>
+        <input type="button" class = "calc-button" value="Clear" onClick="this.form.display.value = 0 ">
+        <input type ="button" class = "calc-button" value= "  <---  " onClick="deleteChar(this.form.display)">
+        <input type="button" class = "calc-button" value=" = " name="enter"
+        onClick="if (checkNum(this.form.display.value)) { 
+        compute(this.form) }">
+      </form>
+      <h4> Developed by Ana Elisa Renault.</h4>
+    </div>
+  </body>
+</html> 
